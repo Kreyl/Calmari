@@ -40,7 +40,10 @@ void Keys_t::ITask() {
 // ==== Keys methods ====
 void Keys_t::Init(Thread *AppThd) {
     PThd = AppThd;
-    for(uint8_t i=0; i<KEYS_CNT; i++) PinSetupIn(KeyData[i].PGpio, KeyData[i].Pin, pudPullDown);
+    for(uint8_t i=0; i<KEYS_CNT; i++) {
+        PinSetupIn(KeyData[i].PGpio, KeyData[i].Pin, pudPullDown);
+        IsPressed[i] = true;
+    }
     // Create and start thread
     chThdCreateStatic(waKeysThread, sizeof(waKeysThread), NORMALPRIO, (tfunc_t)KeysThread, NULL);
 }

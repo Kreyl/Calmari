@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:Calma04-rescue
 LIBS:Connectors_kl
 LIBS:pcb_details
 LIBS:power
@@ -7,7 +8,7 @@ LIBS:Tittar_kl
 LIBS:st_kl
 LIBS:Transistors_kl
 LIBS:Calma04-cache
-EELAYER 27 0
+EELAYER 25 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
@@ -211,7 +212,7 @@ F 3 "" H 1750 2250 60  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L PHOTOTRANSISTOR Q1
+L Phototransistor Q1
 U 1 1 5102E147
 P 2050 2300
 F 0 "Q1" V 2250 2350 60  0000 C CNN
@@ -489,7 +490,7 @@ F 3 "" H 2450 8500 60  0000 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L FUSE0R F1
+L Fuse0R F1
 U 1 1 518BEE94
 P 2500 8700
 F 0 "F1" V 2430 8700 50  0000 C CNN
@@ -578,7 +579,7 @@ NoConn ~ 3250 2950
 Text Label 1750 8500 0    60   ~ 0
 BAT_IN
 $Comp
-L HOLE_METALLED HOLE2
+L HOLE_METALLED-RESCUE-Calma04 HOLE2
 U 1 1 51E1095D
 P 13550 1600
 F 0 "HOLE2" H 13050 1550 60  0000 C CNN
@@ -622,7 +623,7 @@ F 3 "" H 4700 9050 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L FUSE0R F2
+L Fuse0R F2
 U 1 1 51E1315F
 P 4300 8050
 F 0 "F2" V 4230 8050 50  0000 C CNN
@@ -780,7 +781,7 @@ F 3 "~" H 8700 1500 60  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L D_SHOTTKY D1
+L D_Shottky D1
 U 1 1 51E13F5A
 P 9600 1500
 F 0 "D1" H 9600 1600 40  0000 C CNN
